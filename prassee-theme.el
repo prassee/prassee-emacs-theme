@@ -58,8 +58,8 @@
          (modeline-fg-l  blue)
          (modeline-bg    (if window-system bg-d current-line))
          (modeline-bg-l  (if window-system blue current-line))
-         (modeline-fg-inactive grey)
-         (modeline-bg-inactive (if window-system bg-d current-line))
+         (modeline-fg-inactive white)
+         (modeline-bg-inactive grey)
 
          ;; vcs
          (vc-modified    yellow-d)
@@ -114,19 +114,21 @@
      `(font-lock-preprocessor-char-face      ((,c (:foreground ,operators ))))
      `(font-lock-regexp-grouping-backslash   ((,c (:foreground ,operators ))))
      `(font-lock-regexp-grouping-construct   ((,c (:foreground ,operators ))))
+
+     
      ;; Modeline
      `(mode-line                   ((,c (:foreground ,black
                                          :background ,teal))))
-     `(mode-line-inactive          ((,c (:foreground ,white
-                                         :background ,black))))
+     `(mode-line-inactive          ((,c (:foreground ,green
+                                         :background ,green-c))))
      `(header-line                 ((,c (:inherit mode-line))))
 
      ;; Powerline/Spaceline
-     ;;`(spaceline-highlight-face    ((,c (:foreground ,blue))))
+     ;;`(spaceline-highlight-face    ((,c (:foreground ,black))))
      `(powerline-active1           ((,c (:inherit mode-line))))
      `(powerline-active2           ((,c (:inherit mode-line))))
-     ;;`(powerline-inactive1         ((,c (:inherit mode-line-inactive))))
-     ;;`(powerline-inactive2         ((,c (:inherit mode-line-inactive))))
+     `(powerline-inactive1         ((,c (:inherit mode-line-inactive))))
+     `(powerline-inactive2         ((,c (:inherit mode-line-inactive))))
 
      ;; Dired/dired-k
      `(dired-directory             ((,c (:foreground ,orange))))
@@ -356,11 +358,7 @@
      `(web-mode-html-entity-face       ((,c (:foreground ,cyan ))))
      `(web-mode-block-control-face     ((,c (:foreground ,orange))))
      ;;`(web-mode-html-tag-bracket-face  ((,c (:foreground ,operators))))
-     )
-
-   
-
-    ))
+     )))
 
 (provide-theme 'prassee)
 
