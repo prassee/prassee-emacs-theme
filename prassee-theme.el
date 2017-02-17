@@ -25,7 +25,7 @@
       (green          "#98be65"))
 
   (let* ((bg             "#2b303b")
-         (bg-d           (if window-system "#21242b" "#2b303b"))
+         (bg-d           "#2b303b")
          (fg             "#bbc2cf")
          (highlight      blue)
          (vertical-bar   black)
@@ -68,11 +68,7 @@
 
     (custom-theme-set-faces
      'prassee
-
-     ;; Base
-;;    `(bold                   ((,c (:weight ,bold :color ,white))))
-;;    `(italic                 ((,c (:slant  ,italic ))))
-;;    `(bold-italic            ((,c (:weight ,bold :slant ,italic :foreground ,white))))
+     
      ;; Global
      `(default                ((,c (:background ,bg-d :foreground ,fg))))
      `(fringe                 ((,c (:inherit default :foreground ,comments))))
@@ -83,7 +79,7 @@
      `(shadow                 ((,c (:foreground ,grey))))
      `(minibuffer-prompt      ((,c (:foreground ,blue))))
      `(tooltip                ((,c (:background ,black :foreground ,fg))))
-     `(error                  ((,c (:foreground ,red))))
+     `(error                  ((,c (:foreground ,orange))))
      `(warning                ((,c (:foreground ,yellow))))
      `(success                ((,c (:foreground ,green))))
      `(secondary-selection    ((,c (:background ,blue :foreground ,black))))
@@ -94,8 +90,8 @@
      `(show-paren-match       ((,c (:foreground ,red :background ,black ))))
      `(show-paren-mismatch    ((,c (:foreground ,black :background ,red ))))
      `(linum
-       ((((type graphic)) :background ,black :foreground ,teal :bold t)
-        (t                :background ,black :foreground ,teal    :bold t)))
+       ((((type graphic)) :background ,bg :foreground ,teal )
+        (t                :background ,bg :foreground ,teal )))
 
      `(font-lock-builtin-face           ((,c (:foreground ,builtin))))
      `(font-lock-comment-face           ((,c (:foreground ,comments))))
@@ -270,6 +266,12 @@
      ;; Language-specific
      ;;
 
+     ;; ensime , Scala & SBT 
+     `(scala-font-lock:var-face ((t (:foreground ,fg :underline (:style wave :color "yellow") :inherit 'font-lock-variable-name-face))))
+     `(sbt:error ((t (:inherit 'default :foreground ,red))))
+     `(ensime-warnline-highlight ((t (:inherit 'font-lock-warning-face))))
+     `(ensime-compile-infoline ((t (:foreground ,fg ))))
+     
      ;;; (css|scss)-mode
      `(css-proprietary-property ((,c (:foreground ,orange))))
      `(css-property             ((,c (:foreground ,green))))
