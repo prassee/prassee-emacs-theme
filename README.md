@@ -11,6 +11,9 @@ Download the prassee-theme.el in ~/.emacs.d/themes folder and add the below code
 
     (load-theme 'prassee t)
 
+#### Screenshot
+
+![ScreenShot](https://cloud.githubusercontent.com/assets/863188/23050977/871adf92-f4eb-11e6-98da-467fc2d31f5c.png)
 
 #### Mode line config 
 If you would like to have a mode-line to look like mentioned in the screenshot, install powerline and add the following code in you ```init.el``` file.
