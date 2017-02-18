@@ -27,7 +27,8 @@
   (let* ((bg             "#2b303b")
          (bg-d           "#2b303b")
          (fg             "#bbc2cf")
-         (highlight      blue)
+         (highlight      grey-c)
+         (chighlight     grey-c)
          (vertical-bar   black)
          (current-line   (if window-system "#23272e" "#262626"))
          (selection      highlight)
@@ -73,7 +74,7 @@
      `(default                ((,c (:background ,bg-d :foreground ,fg))))
      `(fringe                 ((,c (:inherit default :foreground ,comments))))
      `(region                 ((,c (:background ,region))))
-     `(highlight              ((,c (:background ,blue :foreground ,black))))
+     `(highlight              ((,c (:background ,teal :foreground ,black))))
      `(hl-line                ((,c (:background ,bg))))
      `(cursor                 ((,c (:background ,blue))))
      `(shadow                 ((,c (:foreground ,grey))))
@@ -110,7 +111,7 @@
      `(font-lock-preprocessor-char-face      ((,c (:foreground ,operators ))))
      `(font-lock-regexp-grouping-backslash   ((,c (:foreground ,operators ))))
      `(font-lock-regexp-grouping-construct   ((,c (:foreground ,operators ))))
-
+    
      
      ;; Modeline
      `(mode-line                   ((,c (:foreground ,black
@@ -152,7 +153,8 @@
      `(avy-lead-face-2    ((,c (:background ,search-bg :foreground ,search-fg))))
      `(avy-lead-face      ((,c (:background ,search-bg :foreground ,search-fg))))
 
-     ;; company-mode
+
+      ;; company-mode
      `(company-tooltip             ((,c (:inherit tooltip))))
      `(company-tooltip-common      ((,c (:foreground ,blue))))
      `(company-tooltip-search      ((,c (:foreground ,search-fg :background ,highlight))))
@@ -164,7 +166,7 @@
      `(company-preview             ((,c (:foreground ,blue))))
      `(company-preview-common      ((,c (:foreground ,magenta :background ,grey-d))))
      `(company-preview-search      ((,c (:inherit company-tooltip-search))))
-
+        
      ;; diff-hl
      `(diff-hl-change              ((,c (:foreground ,vc-modified))))
      `(diff-hl-delete              ((,c (:foreground ,vc-deleted))))
@@ -197,7 +199,7 @@
      ;; Helm
      `(helm-selection              ((,c (:background ,teal :foreground ,black))))
      `(helm-match                  ((,c (:foreground ,blue :underline t))))
-     `(helm-source-header          ((,c (:background ,highlight :foreground ,black ))))
+     `(helm-source-header          ((,c (:background ,orange :foreground ,black  ))))
      `(helm-swoop-target-line-face ((,c (:foreground ,highlight :inverse-video t))))
      `(helm-ff-file                ((,c (:foreground ,fg))))
      `(helm-ff-prefix              ((,c (:foreground ,magenta))))
@@ -266,12 +268,7 @@
      ;; Language-specific
      ;;
 
-     ;; ensime , Scala & SBT 
-     `(scala-font-lock:var-face ((t (:foreground ,fg :underline (:style wave :color "yellow") :inherit 'font-lock-variable-name-face))))
-     `(sbt:error ((t (:inherit 'default :foreground ,red))))
-     `(ensime-warnline-highlight ((t (:inherit 'font-lock-warning-face))))
-     `(ensime-compile-infoline ((t (:foreground ,fg ))))
-     
+    
      ;;; (css|scss)-mode
      `(css-proprietary-property ((,c (:foreground ,orange))))
      `(css-property             ((,c (:foreground ,green))))
@@ -349,7 +346,7 @@
      `(org-list-bullet           ((,c (:foreground ,cyan))))  ; custom
      `(message-header-name       ((,c (:foreground ,green)))) ; custom
 
-
+     `(vertical-border ((t (:foreground ,white))))
           ;;; typescript-mode
      `(ts-object-property  ((,c (:inherit js2-object-property))))
      ;;; web-mode
