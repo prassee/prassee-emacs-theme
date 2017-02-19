@@ -23,9 +23,9 @@
       (blue           "#51afef")
       (blue-d         "#1f5582")
       (green          "#98be65"))
-
-  (let* ((bg             "#2b303b")
-         (bg-d           "#2b303b")
+  
+  (let* ((bg             "#002b36") 
+         (bg-d           "#002b36")
          (fg             "#bbc2cf")
          (highlight      grey-c)
          (chighlight     grey-c)
@@ -87,7 +87,7 @@
      `(lazy-highlight         ((,c (:background ,blue-d :foreground ,white))))
      `(match                  ((,c (:foreground ,green :background ,black ))))
      `(trailing-whitespace    ((,c (:background ,comments))))
-     `(vertical-border        ((,c (:foreground ,vertical-bar :background ,vertical-bar))))
+     `(vertical-border        ((,c (:foreground ,teal :background ,white))))
      `(show-paren-match       ((,c (:foreground ,red :background ,black ))))
      `(show-paren-mismatch    ((,c (:foreground ,black :background ,red ))))
      `(linum
@@ -199,7 +199,7 @@
      ;; Helm
      `(helm-selection              ((,c (:background ,teal :foreground ,black))))
      `(helm-match                  ((,c (:foreground ,blue :underline t))))
-     `(helm-source-header          ((,c (:background ,orange :foreground ,black  ))))
+     `(helm-source-header          ((,c (:background ,orange :foreground ,black :weight bold ))))
      `(helm-swoop-target-line-face ((,c (:foreground ,highlight :inverse-video t))))
      `(helm-ff-file                ((,c (:foreground ,fg))))
      `(helm-ff-prefix              ((,c (:foreground ,magenta))))
@@ -346,7 +346,7 @@
      `(org-list-bullet           ((,c (:foreground ,cyan))))  ; custom
      `(message-header-name       ((,c (:foreground ,green)))) ; custom
 
-     `(vertical-border ((t (:foreground ,white))))
+;;      `(vertical-border ((t (:foreground ,white))))
           ;;; typescript-mode
      `(ts-object-property  ((,c (:inherit js2-object-property))))
      ;;; web-mode
