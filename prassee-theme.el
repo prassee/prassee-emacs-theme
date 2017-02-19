@@ -1,4 +1,12 @@
 ;; Inspired from Doom-theme with some customization
+;;; prassee-theme.el --- A dark contrast color theme for Emacs.
+
+;; Copyright (C) 2011-2016 Prassee
+
+;; Author: Prassee <prassee.sathian@gmail.com>
+;; URL: http://github.com/prassee/prassee-emacs-theme
+;; Version: 1.0
+
 
 (deftheme prassee
   "A dark theme inspired by Doom One theme")
