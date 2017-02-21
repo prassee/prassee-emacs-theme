@@ -1,4 +1,4 @@
-;;; prassee-theme.el --- Dark color theme
+;;; prassee-theme.el --- A high contrast color theme for Emacs.
 
 ;; Copyright (c) 2017 Prassee
 
@@ -6,20 +6,27 @@
 ;; Keywords: theme dark colors
 ;; URL: http://github.com/fgeller/basic-theme.el
 ;; Package-Requires: ((emacs "24"))
+;; Version: 1.0
 
-;; This file is not part of GNU Emacs.
-
-;; This file is free software; you can redistribute it and/or modify
+;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
-;; the Free Software Foundation; either version 3, or (at your option)
-;; any later version.
+;; the Free Software Foundation, either version 3 of the License, or
+;; (at your option) any later version.
 
-;; This file is distributed in the hope that it will be useful,
+;; This program is distributed in the hope that it will be useful,
 ;; but WITHOUT ANY WARRANTY; without even the implied warranty of
 ;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 ;; GNU General Public License for more details.
 
-;; Inspired from Doom-theme with some customization
+;; You should have received a copy of the GNU General Public License
+;; along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+;;; Commentary:
+
+;; A variant of the Doom theme Zenburn for Emacs 25, built on top
+;; of the new built-in theme support in Emacs 25.
+
+;;; Code:
 
 (deftheme prassee
   "A dark theme inspired by Doom One theme")
@@ -379,6 +386,8 @@
      `(web-mode-block-control-face     ((,c (:foreground ,orange))))
      ;;`(web-mode-html-tag-bracket-face  ((,c (:foreground ,operators))))
      )))
+
+;;; Footer
 
 (provide-theme 'prassee)
 
