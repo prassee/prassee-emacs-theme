@@ -5,6 +5,15 @@ This is a work in progress theme and will have more updates. Since Iam using thi
 
 #### Installation
 
+##### MELPA 
+
+    ;; install from melpa 
+    (use-package prassee-theme)
+    
+    
+    
+##### Manual
+
 Download the prassee-theme.el in ~/.emacs.d/themes folder and add the below code in init.el
 
     (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
