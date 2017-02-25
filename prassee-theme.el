@@ -3,7 +3,7 @@
 ;; Copyright (c) 2017 Prassee
 
 ;; Author: Prassee  <prassee.sathian@gmail.com>
-;; Keywords: theme dark colors
+;; Keywords: faces
 ;; URL: http://github.com/fgeller/basic-theme.el
 ;; Package-Requires: ((emacs "24"))
 ;; Version: 1.0
