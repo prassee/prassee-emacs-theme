@@ -4,7 +4,7 @@
 
 ;; Author: Prassee  <prassee.sathian@gmail.com>
 ;; Keywords: faces
-;; URL: http://github.com/fgeller/basic-theme.el
+;; URL: https://github.com/prassee/prassee-emacs-theme
 ;; Package-Requires: ((emacs "24"))
 ;; Version: 1.0
 
