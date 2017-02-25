@@ -296,21 +296,21 @@
      ;; Language-specific
      ;;
 
-     ;;; (css|scss)-mode
+     ;; (css|scss)-mode
      `(css-proprietary-property ((,c (:foreground ,orange))))
      `(css-property             ((,c (:foreground ,green))))
      `(css-selector             ((,c (:foreground ,blue))))
 
-     ;;; js2-mode
+     ;; js2-mode
      `(js2-function-param  ((,c (:foreground ,variables))))
      `(js2-function-call   ((,c (:foreground ,functions))))
      `(js2-object-property ((,c (:foreground ,violet))))
      `(js2-jsdoc-tag       ((,c (:foreground ,comments))))
 
-     ;;; makefile-*-mode
+     ;; makefile-*-mode
      `(makefile-targets     ((,c (:foreground ,blue))))
 
-     ;;; markdown-mode
+     ;; markdown-mode
      `(markdown-header-face           ((,c (:foreground ,red :bold t))))
      `(markdown-header-delimiter-face ((,c (:inherit markdown-header-face))))
      `(markdown-metadata-key-face     ((,c (:foreground ,red))))
@@ -373,10 +373,10 @@
      `(org-list-bullet           ((,c (:foreground ,cyan))))  ; custom
      `(message-header-name       ((,c (:foreground ,green)))) ; custom
 
-     ;;; typescript-mode
+     ;; typescript-mode
      `(ts-object-property  ((,c (:inherit js2-object-property))))
 
-     ;;; web-mode
+     ;; web-mode
      `(web-mode-doctype-face           ((,c (:foreground ,comments))))
      `(web-mode-html-tag-face          ((,c (:foreground ,methods))))
      `(web-mode-html-tag-bracket-face  ((,c (:foreground ,methods))))
