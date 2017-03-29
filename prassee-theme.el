@@ -1,4 +1,4 @@
-;;; prassee-theme.el --- A high contrast color theme
+;;; prassee-theme.el --- A high contrast color theme for Emacs.
 
 ;; Copyright (c) 2017 Prassee
 
@@ -6,11 +6,11 @@
 ;; Keywords: faces
 ;; URL: https://github.com/prassee/prassee-emacs-theme
 ;; Package-Requires: ((emacs "24"))
-;; Version: 1.2
+;; Version: 1.1
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
-;; the Free Software Foundation, either version 3 of the License, or
+;; the Free Software Fdoundation, either version 3 of the License, or
 ;; (at your option) any later version.
 
 ;; This program is distributed in the hope that it will be useful,
@@ -23,8 +23,8 @@
 
 ;;; Commentary:
 
-;; A variant of the Doom theme Zenburn for Emacs 24, built on top
-;; of the new built-in theme support in Emacs 24.
+;; A variant of the Doom theme Zenburn for Emacs 25, built on top
+;; of the new built-in theme support in Emacs 25.
 
 ;;; Code:
 
@@ -143,20 +143,7 @@
      `(font-lock-regexp-grouping-backslash   ((,c (:foreground ,operators ))))
      `(font-lock-regexp-grouping-construct   ((,c (:foreground ,operators ))))
 
-     ;; Modeline
-     `(mode-line                   ((,c (:foreground ,black
-                                                     :background ,teal))))
-     `(mode-line-inactive          ((,c (:foreground ,green
-                                                     :background ,green-c))))
-     `(header-line                 ((,c (:inherit mode-line))))
-
-     ;; Powerline/Spaceline
-     ;;`(spaceline-highlight-face    ((,c (:foreground ,black))))
-     `(powerline-active1           ((,c (:inherit mode-line))))
-     `(powerline-active2           ((,c (:inherit mode-line))))
-     `(powerline-inactive1         ((,c (:inherit mode-line-inactive))))
-     `(powerline-inactive2         ((,c (:inherit mode-line-inactive))))
-
+  
      ;; Dired/dired-k
      `(dired-directory             ((,c (:foreground ,orange))))
      `(dired-ignored               ((,c (:foreground ,comments))))
@@ -205,7 +192,6 @@
      `(elscreen-tab-control-face        ((,c (:background ,bg-d :foreground ,bg-d))))
      `(elscreen-tab-current-screen-face ((,c (:background ,bg :foreground ,fg))))
      `(elscreen-tab-other-screen-face   ((,c (:background ,tab-unfocused-bg :foreground ,tab-unfocused-fg))))
-
 
      ;; flycheck
      `(flycheck-error     ((,c (:underline (:style wave :color ,red)))))
@@ -340,7 +326,7 @@
      `(org-priority              ((,c (:foreground ,red))))
      `(org-ellipsis            ((,c (:inherit hs-face))))
      `(org-hide                  ((,c (:foreground ,bg))))
-     `(org-table                 ((,c (:foreground ,cyan))))
+     `(org-table                 ((,c (:foreground ,yellow-d))))
      `(org-quote                 ((,c (:slant italic :foreground ,grey :background ,current-line))))
      `(org-document-info         ((,c (:foreground ,orange))))
      `(org-document-info-keyword ((,c (:foreground ,grey-d))))
@@ -350,16 +336,16 @@
      `(org-block-background      ((,c (:background ,current-line))))
      `(org-archived              ((,c (:foreground ,grey))))
      `(org-document-title        ((,c (:foreground ,cyan :height 1.2))))
-     `(org-level-1               ((,c (:background ,current-line :foreground ,blue  :height 1.2))))
-     `(org-level-2               ((,c (                          :foreground ,blue))))
-     `(org-level-3               ((,c (                          :foreground ,blue))))
-     `(org-level-4               ((,c (                          :foreground ,blue))))
-     `(org-level-5               ((,c (                          :foreground ,blue))))
-     `(org-level-6               ((,c (                          :foreground ,blue))))
+     `(org-level-1               ((,c (:background ,current-line :foreground ,blue  :height 1.2 :bold t))))
+     `(org-level-2               ((,c (                          :foreground ,yellow-d :height 1.1 :bold t))))
+     `(org-level-3               ((,c (                          :foreground ,cyan :height 1.0 :bold t))))
+     `(org-level-4               ((,c (                          :foreground ,teal))))
+     `(org-level-5               ((,c (                          :foreground ,yellow))))
+     `(org-level-6               ((,c (                          :foreground ,green))))
      `(org-code                  ((,c (:foreground ,orange))))
      `(org-verbatim              ((,c (:foreground ,green))))
      `(org-formula               ((,c (:foreground ,cyan))))
-     `(org-list-dt               ((,c (:foreground ,cyan))))
+     `(org-list              ((,c (:foreground ,cyan))))
      `(org-footnote              ((,c (:foreground ,orange))))
      `(org-link                  ((,c (:foreground ,cyan :underline t))))
      `(org-date                  ((,c (:foreground ,violet))))
@@ -375,6 +361,12 @@
 
      ;; typescript-mode
      `(ts-object-property  ((,c (:inherit js2-object-property))))
+
+     ;; powerline mode 
+     `(powerline-active1 ((,c (:background ,blue-d :foreground ,fg))))
+     `(powerline-active2 ((,c (:background ,blue-d :foreground ,fg))))
+     `(powerline-inactive1 ((,c (:background ,grey-dd :foreground ,fg))))
+     `(powerline-inactive2 ((,c (:background ,grey-dd :foreground ,fg))))
 
      ;; web-mode
      `(web-mode-doctype-face           ((,c (:foreground ,comments))))
