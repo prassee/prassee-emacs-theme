@@ -163,11 +163,7 @@
      ;; Plugins
      ;;
 
-     ;; Avy
-     `(avy-lead-face-0    ((,c (:background ,search-bg :foreground ,search-fg))))
-     `(avy-lead-face-1    ((,c (:background ,search-bg :foreground ,search-fg))))
-     `(avy-lead-face-2    ((,c (:background ,search-bg :foreground ,search-fg))))
-     `(avy-lead-face      ((,c (:background ,search-bg :foreground ,search-fg))))
+
 
      ;; company-mode
      `(company-tooltip             ((,c (:inherit tooltip))))
@@ -222,11 +218,11 @@
      `(helm-ff-executable          ((,c (:foreground ,white ))))
 
      ;; indent-guide, highlight-{quoted,numbers,indentation}-mode
-     `(indent-guide-face                         ((,c (:foreground "#2F2F38"))))
-     `(highlight-indentation-face                ((,c (:background "#222830"))))
-     `(highlight-indentation-current-column-face ((,c (:background "#222830"))))
-     `(highlight-indentation-guides-odd-face     ((,c (:background ,bg))))
-     `(highlight-indentation-guides-even-face    ((,c (:background "#222830"))))
+     `(indent-guide-face                         ((,c (:foreground ,green))))
+     `(highlight-indentation-face                ((,c (:background ,green))))
+     `(highlight-indentation-current-column-face ((,c (:background ,green))))
+     `(highlight-indentation-guides-odd-face     ((,c (:background ,teal))))
+     `(highlight-indentation-guides-even-face    ((,c (:background ,green))))
      `(highlight-quoted-symbol                   ((,c (:foreground ,type))))
      `(highlight-quoted-quote                    ((,c (:foreground ,operators))))
      `(highlight-numbers-number                  ((,c (:foreground ,numbers))))
@@ -363,10 +359,10 @@
      `(ts-object-property  ((,c (:inherit js2-object-property))))
 
      ;; powerline mode 
-     `(powerline-active1 ((,c (:background ,blue-d :foreground ,fg))))
-     `(powerline-active2 ((,c (:background ,blue-d :foreground ,fg))))
-     `(powerline-inactive1 ((,c (:background ,grey-dd :foreground ,fg))))
-     `(powerline-inactive2 ((,c (:background ,grey-dd :foreground ,fg))))
+     `(powerline-active1 ((,c (:background ,blue-d :foreground ,green))))
+     `(powerline-active2 ((,c (:background ,blue-d :foreground ,green))))
+     `(powerline-inactive1 ((,c (:background ,grey-d :foreground ,green))))
+     `(powerline-inactive2 ((,c (:background ,grey-d :foreground ,green))))
 
      ;; web-mode
      `(web-mode-doctype-face           ((,c (:foreground ,comments))))
