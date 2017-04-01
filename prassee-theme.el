@@ -373,6 +373,27 @@
      `(web-mode-block-control-face     ((,c (:foreground ,orange))))
      )))
 
+
+;; modeline & spaceline specific change  if spaceline and Fira Code font is installed 
+(set-face-attribute 'mode-line nil :font "Fira Code-12" :weight 'bold )
+(setq ns-use-srgb-colorspace nil)
+(setq powerline-default-separator 'arrow)
+(setq spaceline-separator-dir-left '(left . left))
+(setq spaceline-separator-dir-right '(right . right))
+(setq powerline-height 27)
+(setq spaceline-highlight-face-func 'spaceline-highlight-face-modified)
+(spaceline-toggle-projectile-root-on)
+(spaceline-toggle-helm-buffer-id-on)  
+(spaceline-toggle-window-number-on)
+(spaceline-toggle-buffer-position-off)
+(spaceline-toggle-buffer-size-off)
+(spaceline-toggle-minor-modes-off)
+(spaceline-toggle-selection-info-on)  
+(spaceline-helm-mode +1)
+
+;; set cursor style
+(setq-default cursor-type 'bar) 
+
 ;;;###autoload
 (when load-file-name
   (add-to-list 'custom-theme-load-path
