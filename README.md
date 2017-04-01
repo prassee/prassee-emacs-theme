@@ -22,32 +22,10 @@ Download the prassee-theme.el in ~/.emacs.d/themes folder and add the below code
 
 #### Screenshot
 
-![ScreenShot](https://cloud.githubusercontent.com/assets/863188/23050977/871adf92-f4eb-11e6-98da-467fc2d31f5c.png)
+![ScreenShot](https://cloud.githubusercontent.com/assets/863188/24575040/c6e5dcb8-16b9-11e7-8cee-143ea02f4fef.png)
 
-#### Mode line config 
-If you would like to have a mode-line to look like mentioned in the screenshot, install powerline and add the following code in you ```init.el``` file.
+#### Changes 
+- added default spaceline changes to get same look and feel as presented in screenshot
+- added default cursor type 
+- custom font and size for modeline 
 
-    
-    (use-package spaceline	
-    :init
-    (progn
-        (require 'spaceline-config)
-        (setq powerline-default-separator 'slant)
-        (setq spaceline-workspace-numbers-unicode t)
-        (setq spaceline-separator-dir-left '(left . left))
-        (setq spaceline-separator-dir-right '(right . right))
-        (setq powerline-height 27)
-        (spaceline-toggle-window-number-on)
-        (spaceline-toggle-buffer-modified-on)
-        (spaceline-toggle-major-mode-on)
-        (spaceline-toggle-battery-on)
-        (spaceline-toggle-hud-on)
-        (spaceline-toggle-projectile-root-on)
-        (spaceline-emacs-theme)))
-
-
-### TODO
-
-    - while transitioning from doom-theme, completely disabled bold need a work around 
-    - include Ensime specific settings to make Scala code look beautiful
-    
