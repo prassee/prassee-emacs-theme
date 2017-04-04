@@ -53,7 +53,8 @@
       (green          "#98be65"))
 
   (let* ((bg             "#002b36")
-         (bg-d           "#002b36")
+         (bg-d           "#002a36")
+         (bg-dd          "#0087af")
          (fg             "#bbc2cf")
          (highlight      grey-c)
          (chighlight     grey-c)
@@ -320,7 +321,7 @@
      ;; org-mode
      `(org-tag                   ((,c (:foreground ,yellow :bold t))))
      `(org-priority              ((,c (:foreground ,red))))
-     `(org-ellipsis            ((,c (:inherit hs-face))))
+     `(org-ellipsis              ((,c (:inherit hs-face))))
      `(org-hide                  ((,c (:foreground ,bg))))
      `(org-table                 ((,c (:foreground ,yellow-d))))
      `(org-quote                 ((,c (:slant italic :foreground ,grey :background ,current-line))))
@@ -333,11 +334,11 @@
      `(org-archived              ((,c (:foreground ,grey))))
      `(org-document-title        ((,c (:foreground ,cyan :height 1.2))))
      `(org-level-1               ((,c (:background ,current-line :foreground ,blue  :height 1.2 :bold t))))
-     `(org-level-2               ((,c (                          :foreground ,yellow-d :height 1.1 :bold t))))
-     `(org-level-3               ((,c (                          :foreground ,cyan :height 1.0 :bold t))))
-     `(org-level-4               ((,c (                          :foreground ,teal))))
-     `(org-level-5               ((,c (                          :foreground ,yellow))))
-     `(org-level-6               ((,c (                          :foreground ,green))))
+     `(org-level-2               ((,c (:foreground ,yellow-d :height 1.1 :bold t))))
+     `(org-level-3               ((,c (:foreground ,cyan :height 1.0 :bold t))))
+     `(org-level-4               ((,c (:foreground ,teal))))
+     `(org-level-5               ((,c (:foreground ,yellow))))
+     `(org-level-6               ((,c (:foreground ,green))))
      `(org-code                  ((,c (:foreground ,orange))))
      `(org-verbatim              ((,c (:foreground ,green))))
      `(org-formula               ((,c (:foreground ,cyan))))
@@ -359,10 +360,10 @@
      `(ts-object-property  ((,c (:inherit js2-object-property))))
 
      ;; powerline mode 
-     `(powerline-active1 ((,c (:background ,blue-d :foreground ,green))))
-     `(powerline-active2 ((,c (:background ,blue-d :foreground ,green))))
-     `(powerline-inactive1 ((,c (:background ,grey-d :foreground ,green))))
-     `(powerline-inactive2 ((,c (:background ,grey-d :foreground ,green))))
+     `(powerline-active1 ((,c (:background ,cyan-d :foreground ,bg-d ))))
+     `(powerline-active2 ((,c (:background ,cyan-d :foreground ,bg-d ))))
+     `(powerline-inactive1 ((,c (:background ,grey :foreground ,white))))
+     `(powerline-inactive2 ((,c (:background ,grey :foreground ,white))))
 
      ;; web-mode
      `(web-mode-doctype-face           ((,c (:foreground ,comments))))
@@ -375,12 +376,12 @@
 
 
 ;; modeline & spaceline specific change  if spaceline and Fira Code font is installed 
-(set-face-attribute 'mode-line nil :font "Fira Code-12" :weight 'bold )
+(set-face-attribute 'mode-line nil :font "monaco-12" :weight 'bold )
 (setq ns-use-srgb-colorspace nil)
-(setq powerline-default-separator 'arrow)
+(setq powerline-default-separator 'box)
 (setq spaceline-separator-dir-left '(left . left))
 (setq spaceline-separator-dir-right '(right . right))
-(setq powerline-height 27)
+(setq powerline-height 29)
 (setq spaceline-highlight-face-func 'spaceline-highlight-face-modified)
 (spaceline-toggle-projectile-root-on)
 (spaceline-toggle-helm-buffer-id-on)  
