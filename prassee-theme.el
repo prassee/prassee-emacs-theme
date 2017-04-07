@@ -164,8 +164,6 @@
      ;; Plugins
      ;;
 
-
-
      ;; company-mode
      `(company-tooltip             ((,c (:inherit tooltip))))
      `(company-tooltip-common      ((,c (:foreground ,blue))))
@@ -353,7 +351,7 @@
      `(org-checkbox              ((,c (:inherit org-todo))))
      `(org-checkbox-statistics-todo ((,c (:inherit org-todo))))
      `(org-checkbox-statistics-done ((,c (:inherit org-done))))
-     `(org-list-bullet           ((,c (:foreground ,cyan))))  ; custom
+     `(org-list-bullet           ((,c (:foreground ,cyan :bold t :italic t))))  ; custom
      `(message-header-name       ((,c (:foreground ,green)))) ; custom
 
      ;; typescript-mode
@@ -376,9 +374,9 @@
 
 
 ;; modeline & spaceline specific change  if spaceline and Fira Code font is installed 
-(set-face-attribute 'mode-line nil :font "monaco-12" :weight 'bold )
+(set-face-attribute 'mode-line nil :font "PragmataPro-12" :weight 'bold )
 (setq ns-use-srgb-colorspace nil)
-(setq powerline-default-separator 'box)
+
 (setq spaceline-separator-dir-left '(left . left))
 (setq spaceline-separator-dir-right '(right . right))
 (setq powerline-height 29)
