@@ -1,7 +1,7 @@
 # prassee-emacs-theme
 A dark theme for Emacs based on Doom Theme (https://github.com/hlissner/emacs-doom-theme). 
 
-This is a work in progress theme and will have more updates. Since Iam using this theme for myself, I hope can push updates frequently. 
+This is a work in progress theme and will have more updates. Since I am using this theme for myself, I hope I can push updates frequently. 
 
 #### Installation
 
