@@ -3,7 +3,7 @@
 ;; Copyright (c) 2017 Prassee
 
 ;; Author: Prassee  <prassee.sathian@gmail.com>
-;; Keywords: faces
+;; Keywords: dark high-contrast  faces
 ;; URL: https://github.com/prassee/prassee-emacs-theme
 ;; Package-Requires: ((emacs "24"))
 ;; Version: 1.2
@@ -24,7 +24,7 @@
 ;;; Code:
 
 (deftheme prassee
-  "A dark theme for emacs")
+  "A dark theme for emacs and compatible with most programming modes")
 
 (let ((c '((class color) (min-colors 89)))
       (black          "#181e26")
@@ -366,11 +366,6 @@
      `(web-mode-block-control-face     ((,c (:foreground ,orange))))
      )))
 
-
-;; modeline & spaceline specific change  if spaceline and Fira Code font is installed
-;; :weight 'bold 
-;; (setq ns-use-srgb-colorspace nil)
-
 ;; set cursor style
 (setq-default cursor-type '(bar . 4))
 ;; (set-cursor-color ,magenta) 
@@ -380,7 +375,7 @@
   (add-to-list 'custom-theme-load-path
                (file-name-as-directory (file-name-directory load-file-name))))
 
-;;; Footer
+;; Footer
 (provide-theme 'prassee)
 
 ;; Local Variables:
