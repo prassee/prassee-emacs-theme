@@ -30,6 +30,7 @@
       (black          "#181e26")
       (white          "#DFDFDF")
       (grey           (if window-system "#5B6268" "#525252"))
+      (greenr         "green")
       (green-c        "#65737E")
       (grey-c         "#3d4451")
       (grey-d         "#3D3D48")
@@ -40,6 +41,7 @@
       (red            "#ff6c6b")
       (magenta        "#c678dd")
       (violet         "#a9a1e1")
+      (cyanr          "cyan")
       (cyan           "#46D9FF")
       (cyan-d         "#5699AF")
       (teal           "#4db5bd")
@@ -104,7 +106,7 @@
      `(region                 ((,c (:background ,region))))
      `(highlight              ((,c (:background ,teal :foreground ,black))))
      `(hl-line                ((,c (:background ,bg))))
-     `(cursor                 ((,c (:background ,blue))))
+     `(cursor                 ((,c (:background ,greenr))))
      `(shadow                 ((,c (:foreground ,grey))))
      `(minibuffer-prompt      ((,c (:foreground ,blue))))
      `(tooltip                ((,c (:background ,black :foreground ,fg))))
@@ -139,7 +141,6 @@
      `(font-lock-preprocessor-char-face      ((,c (:foreground ,operators ))))
      `(font-lock-regexp-grouping-backslash   ((,c (:foreground ,operators ))))
      `(font-lock-regexp-grouping-construct   ((,c (:foreground ,operators ))))
-
   
      ;; Dired/dired-k
      `(dired-directory             ((,c (:foreground ,orange))))
@@ -349,11 +350,10 @@
      `(org-checkbox-statistics-done ((,c (:inherit org-done))))
      `(org-list-bullet           ((,c (:foreground ,cyan :bold t :italic t))))  ; custom
      `(message-header-name       ((,c (:foreground ,green)))) ; custom
-
-    
+  
      ;; mode-line with slightly more height
-     `(mode-line ((,c (:background ,teal :foreground ,black :box (:line-width 6 :color ,teal)))))    
-     `(mode-line-inactive ((,c (:background ,grey :foreground ,white :box (:line-width 6 :color ,grey)))))
+     `(mode-line ((,c (:background ,teal :foreground ,black :box (:line-width 5 :color ,teal)))))    
+     `(mode-line-inactive ((,c (:background ,region :foreground ,teal :box (:line-width 5 :color ,region)))))
      
      ;; `(mode-line-buffer-id ((,c (:background ,white  :foreground ,bg  :box (:line-width 6 :color ,white)))))
 
@@ -369,10 +369,11 @@
 
 ;; modeline & spaceline specific change  if spaceline and Fira Code font is installed
 ;; :weight 'bold 
-(setq ns-use-srgb-colorspace nil)
+;; (setq ns-use-srgb-colorspace nil)
 
 ;; set cursor style
-(setq-default cursor-type 'box) 
+(setq-default cursor-type '(bar . 4))
+;; (set-cursor-color ,magenta) 
 
 ;; autoload
 (when load-file-name
@@ -380,7 +381,6 @@
                (file-name-as-directory (file-name-directory load-file-name))))
 
 ;;; Footer
-
 (provide-theme 'prassee)
 
 ;; Local Variables:
