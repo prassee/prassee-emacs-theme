@@ -355,8 +355,6 @@
      `(mode-line ((,c (:background ,teal :foreground ,black :box (:line-width 5 :color ,teal)))))    
      `(mode-line-inactive ((,c (:background ,region :foreground ,teal :box (:line-width 5 :color ,region)))))
      
-     ;; `(mode-line-buffer-id ((,c (:background ,white  :foreground ,bg  :box (:line-width 6 :color ,white)))))
-
      ;; web-mode
      `(web-mode-doctype-face           ((,c (:foreground ,comments))))
      `(web-mode-html-tag-face          ((,c (:foreground ,methods))))
