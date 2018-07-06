@@ -351,8 +351,8 @@
      `(message-header-name       ((,c (:foreground ,green)))) ; custom
   
      ;; mode-line with slightly more height
-     `(mode-line ((,c (:background ,teal :foreground ,black :box (:line-width 5 :color ,teal)))))    
-     `(mode-line-inactive ((,c (:background ,region :foreground ,teal :box (:line-width 5 :color ,region)))))
+     `(mode-line ((,c (:background ,teal :foreground ,black :box (:line-width 2 :color ,teal)))))    
+     `(mode-line-inactive ((,c (:background ,region :foreground ,teal :box (:line-width 2 :color ,region)))))
      
      ;; web-mode
      `(web-mode-doctype-face           ((,c (:foreground ,comments))))
@@ -375,6 +375,8 @@
 (when load-file-name
   (add-to-list 'custom-theme-load-path
                (file-name-as-directory (file-name-directory load-file-name))))
+
+(add-hook 'org-mode-hook (lambda () (linum-mode 0)))
 
 ;; Footer
 (provide-theme 'prassee)
