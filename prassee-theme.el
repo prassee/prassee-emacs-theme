@@ -369,7 +369,6 @@
 
 ;; set cursor style
 (setq-default cursor-type '(bar . 5))
-;; (set-cursor-color ,magenta) 
 
 ;; autoload
 (when load-file-name
